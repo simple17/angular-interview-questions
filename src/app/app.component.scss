@@ -1,0 +1,66 @@
+@import "./variables.scss";
+#root {
+  height: 100%;
+}
+
+:host {
+  font-family: sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  background-color: $pink-color;
+  padding: 1ch 1ch;
+  margin: 0;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1.8px;
+    color: #111;
+
+    background-color: $blue-color;
+    border: 0;
+    border-radius: 4px;
+
+    padding: 1ch;
+
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background-color: $mint-color;
+    }
+  }
+}
+
+.body {
+  padding: 2ch;
+  background-color: $yellow-color;
+
+  flex-grow: 1;
+}

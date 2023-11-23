@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.notifications-list {
+  width: 300px;
+  margin: 24px auto;
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 8px 16px;
+  margin-bottom: 8px;
+
+  border-radius: 4px;
+
+  text-align: left;
+  background-color: var(--blue-color);
+}

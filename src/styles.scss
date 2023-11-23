@@ -1,0 +1,27 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+:root {
+  --pink-color: #ffaebc;
+  --blue-color: #a0e7e5;
+  --mint-color: #b4f8c8;
+  --yellow-color: #fbe7c6;
+}
+
+.button {
+  padding: 4px 8px;
+  min-height: 24px;
+  background-color: var(--pink-color);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input {
+  min-height: 24px;
+  border-radius: 4px;
+  border: 0;
+}

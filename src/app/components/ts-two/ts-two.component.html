@@ -1,0 +1,12 @@
+<h1>TS Question 2</h1>
+<p>
+  On "Run" button click the two promises must be created. The first must
+  be resolved in 1 seconds with some success message. The second must be
+  rejected in 3 seconds. Once both promises are completed place the success messages into successMessages property.
+</p>
+<ul class="messages">
+  <li class="messages__item" *ngFor="let message of successMessages">{{message}}</li>
+</ul>
+<button (click)="onRunButtonClick()" class="button">
+  Run
+</button>

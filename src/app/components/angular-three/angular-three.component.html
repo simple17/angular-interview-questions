@@ -1,0 +1,12 @@
+<h2>Angular Question 3</h2>
+<p>TODO: Move notifications into "notifications" reducer. Implement sendNotification and removeNotification actions.</p>
+<div class="form">
+  <input class="input" type="text" [(ngModel)]="newNotification"/>
+  <button class="button" (click)="sendNotification()">Send</button>
+</div>
+<div class="notifications-list">
+  <article class="notification" *ngFor="let notification of notifications">
+    <span>{{notification}}</span>
+    <button class="button" (click)="removeNotification()">remove</button>  
+  </article>
+</div>
